@@ -12,7 +12,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.bopp-obec.info/sgs/TblTranscripts/Edit-TblTranscripts-Table*", "<all_urls>"],
+      "matches": ["*://*.bopp-obec.info/sgs/*"],
       "js": ["content.js"],
       "run_at": "document_end"
     }

@@ -182,6 +182,7 @@ let fileName = ""
 //press o for openFile
   document.addEventListener('keydown', (e) => {
       if (e.isComposing || e.keyCode === 79) {
+        colorizeEvalGrade()
         console.log("keydown o: please open the file");
           openFile()
     }
@@ -216,11 +217,17 @@ let fileName = ""
       for (let i = 0; i < arr_content_25.length; i++) {
         //2.5
         console.log(inputs[29 + (9 * arr_content_25[i])]);
-        inputs[29 + (9 * arr_content_25[i])].style.border = "2px solid orange"
-        inputs[30 + (9 * arr_content_25[i])].style.border = "2px solid orange"
-        inputs[31 + (9 * arr_content_25[i])].style.border = "2px solid orange"
-        inputs[32 + (9 * arr_content_25[i])].style.border = "2px solid orange"
-        inputs[33 + (9 * arr_content_25[i])].style.border = "2px solid orange"
+        inputs[29 + (9 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+        inputs[30 + (9 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+        inputs[31 + (9 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+        inputs[32 + (9 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+        inputs[33 + (9 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+
+        inputs[29 + (9 * arr_content_25[i])].value = "2"
+        inputs[30 + (9 * arr_content_25[i])].value = "2"
+        inputs[31 + (9 * arr_content_25[i])].value = "2"
+        inputs[32 + (9 * arr_content_25[i])].value = "2"
+        inputs[33 + (9 * arr_content_25[i])].value = "2"
       }
       for (let i = 0; i < arr_content_1.length; i++) {
         //1
@@ -256,15 +263,18 @@ let fileName = ""
 
     if (arr_content_25[0] !== "") {
       for (let i = 0; i < arr_content_25.length; i++) {
-        inputs[37 + (14 * arr_content_25[i])].style.border = "2px solid orange"
-        inputs[39 + (14 * arr_content_25[i])].style.border = "2px solid orange"
+        inputs[37 + (14 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+        inputs[39 + (14 * arr_content_25[i])].style.border = "2px solid #FF2C00"
+        //add value to input
+        inputs[37 + (14 * arr_content_25[i])].value = "2"
+        inputs[39 + (14 * arr_content_25[i])].value = "2"
       }
     }
 
     if (arr_content_2[0] !== "") {
       for (let i = 0; i < arr_content_2.length; i++) {
-        inputs[37 + (14 * arr_content_2[i])].style.border = "2px solid orange"
-        inputs[39 + (14 * arr_content_2[i])].style.border = "2px solid orange"
+        inputs[37 + (14 * arr_content_2[i])].style.border = "2px solid #FF2C00"
+        inputs[39 + (14 * arr_content_2[i])].style.border = "2px solid #FF2C00"
       }
     }
 
