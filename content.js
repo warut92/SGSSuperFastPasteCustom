@@ -182,7 +182,6 @@ let fileName = ""
 //press o for openFile
   document.addEventListener('keydown', (e) => {
       if (e.isComposing || e.keyCode === 79) {
-        colorizeEvalGrade()
         console.log("keydown o: please open the file");
           openFile()
     }
